@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+      <div class="logo">
+        <img src="images/ai2.png" alt="Logo">
+      </div>
+
+      <nav class="header__menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <section class="section ai-types">
+      <div class="container">
+        <h2>Types of AI</h2>
+        <div class="ai-types-grid">
+
+          <div class="ai-type-card">
+            <div class="card-icon">🤖</div>
+            <h3>Card 1:</h3>
+            <p>AI can process huge amounts of data in seconds, something humans could take years to do, making it a powerful tool for knowledge and discovery.</p>
+            <div class="card-footer">
+              <span class="card-date">Jan 16, 2026</span>
+              <a href="#" class="card-heart">♡</a>
+              <a href="#" class="card-btn">love</a>
+            </div>
+          </div>
+
+          <div class="ai-type-card">
+            <div class="card-icon">💬</div>
+            <h3>Card 2:</h3>
+            <p>AI can act as a conversational companion, helping users explore ideas, brainstorm solutions, or make decisions.</p>
+            <div class="card-footer">
+              <span class="card-date">Jan 16, 2026</span>
+              <a href="#" class="card-heart">♡</a>
+              <a href="#" class="card-btn">love</a>
+            </div>
+          </div>
+
+          <div class="ai-type-card">
+            <div class="card-icon">👁️</div>
+            <h3>Card 3:</h3>
+            <p>AI can automate repetitive and boring tasks, freeing humans to focus on innovation, creativity, and decision-making.</p>
+            <div class="card-footer">
+              <span class="card-date">Jan 16, 2026</span>
+              <a href="#" class="card-heart">♡</a>
+              <a href="#" class="card-btn">love</a>
+            </div>
+          </div>
+
+          <div class="ai-type-card">
+            <div class="card-icon">🤖</div>
+            <h3>Card 4:</h3>
+            <p>AI can give personalized recommendations, talking to people to understand their preferences and needs.</p>
+            <div class="card-footer">
+              <span class="card-date">Jan 16, 2026</span>
+              <a href="#" class="card-heart">♡</a>
+              <a href="#" class="card-btn">love</a>
+            </div>
+          </div>
+
+          <div class="ai-type-card">
+            <div class="card-icon">🧠</div>
+            <h3>Card 5:</h3>
+            <p>AI has the potential to advance science, medicine, and technology, opening doors to solutions that were once unimaginable.</p>
+            <div class="card-footer">
+              <span class="card-date">Jan 16, 2026</span>
+              <a href="#" class="card-heart">♡</a>
+              <a href="#" class="card-btn">love</a>
+            </div>
+          </div>
+
+          <div class="ai-type-card">
+            <div class="card-icon">💡</div>
+            <h3>Card 6:</h3>
+            <p>AI learns from patterns and adapts, allowing it to predict outcomes, improve systems, and even help solve complex problems faster than ever before.</p>
+            <div class="card-footer">
+              <span class="card-date">Jan 16, 2026</span>
+              <a href="#" class="card-heart">♡</a>
+              <a href="#" class="card-btn">love</a>
+            </div>
+          </div>
+              <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc">this was the youtube video that help me build this website</a>
+              <a href="https://www.youtube.com/watch?v=wxznTygnRfQ">another great video to training your code</a>
+              <a href="https://www.youtube.com/shorts/GYZJsM7sOKU">funny ai video</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+
+          <div class="feature-item">
+            <div class="feature-icon">📚</div>
+            <h3>it can help you learn</h3>
+            <p>it can help you learn faster and easier</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">🚨</div>
+            <h3>it's better than other ai</h3>
+            <p>is way faster than other ai</p>
+          </div>
+ 
+          <div class="feature-item">
+            <div class="feature-icon">🎮</div>
+            <h3>it is a fun website</h3>
+            <p>and that's the most important part that it's a fun website</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+     <section class="section">
+  <div class="container">
+    <h2>Ask AI Anything</h2>
+    <p>Type a question about Artificial Intelligence below.</p>
+
+    <!-- AI Chat Box -->
+    <div class="ai-box">
+      <div class="ai-output" id="aiOutput">
+        <p class="ai-placeholder">🤖 AI response will appear here...</p>
+      </div>
+
+      <div class="ai-input">
+        <input
+          type="text"
+          id="aiInput"
+          placeholder="Ask something like: What is machine learning?"
+        >
+        <button onclick="askAI()">➤</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <div class="footer__wrap">
+      <div class="footer__col">
+        <img src="images/ai2.png" alt="Logo">
+        <br>
+      </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Menu</h4>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <p>Email: nisang2010@ofekschool.org.il</p>
+        <p>Phone: +1 123-123-2884</p>
+
+        <div class="social">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <img src="images/github_logo_icon.webp" alt="github">
+          </a>
+              <a href="https://discord.com/" target="_blank">        
+            <img src="images/dis.png" alt="discord">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      © This site is licensed under the GNU General Public License v3.0.
+    </p>
+  </footer>
+
+</body>
+</html>
