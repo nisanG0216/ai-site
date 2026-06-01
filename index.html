@@ -21,6 +21,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><button onclick="openModal()">Password</button></li>
         </ul>
       </nav>
       </div>
@@ -205,6 +206,40 @@
       © This site is licensed under the GNU General Public License v3.0.
     </p>
   </footer>
+<div id="passwordModal" style="display:none; position:fixed; top:30%; left:40%; background:white; border:1px solid black; padding:20px;">
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()">Enter</button>
+    <button onclick="closeModal()">X</button>
+</div>
 
+<script>
+function openModal() {
+    document.getElementById("passwordModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("passwordModal").style.display = "none";
+}
+
+function checkPassword() {
+    const password = document.getElementById("passwordInput").value;
+
+    fetch("/check-password", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ password })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            window.location.href = "/try.html";
+        } else {
+            alert("Wrong password");
+        }
+    });
+}
+</script>
 </body>
 </html>

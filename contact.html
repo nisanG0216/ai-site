@@ -2,6 +2,24 @@
 <script src="script.js"></script>
 <html lang="en">
   <head>
+    <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+      <div class="logo">
+        <img src="images/ai2.png" alt="Logo">
+      </div>
+
+      <nav class="header__menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
@@ -15,19 +33,7 @@
         <nav>
           <ul>
            <div class="nav__wrap">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav> 
-            </div>
-          </ul>
-        </nav>
-        </div>
-        
-      </div>
+    
     </header>
 
     <main>
@@ -50,7 +56,7 @@
           <input type="email" id="email" name="email" required><br><br>
 
           <label for="phone_number">טלפון:</label><br> 
-         <input type="tel" id="phone_number" name="phone_number"><br><br>
+         <input type="tel" inputmode="numeric" id="phone_number" name="phone_number"><br><br>
           
 
           <label for="subjectMsg">נושא ההודעה:</label><br>
