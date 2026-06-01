@@ -35,6 +35,13 @@ app.post('/contact', (req, res) => {
     <a href="/contact.html">Back to Contact Page</a>
   `);
 });
+app.post('/check-password', (req, res) => {
+    if (req.body.password === 'nisan') {
+        res.json({ success: true });
+    } else {
+        res.json({ success: false });
+    }
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
